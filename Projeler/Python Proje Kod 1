@@ -1,0 +1,14 @@
+liste = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+outliste = []
+
+def flatten(liste):
+    for i in liste:
+        if (type(i)==list):
+            flatten(i)
+        else:
+            outliste.append(i)
+    return outliste
+            
+            
+flatten(liste)
+print(outliste)
