@@ -12,3 +12,23 @@ def flatten(liste):
             
 flatten(liste)
 print(outliste)
+
+___________________________________________________________________________
+
+
+liste = [[1, 2], [3, 4], [5, 6, 7]]
+outliste = []
+
+def flatten(liste):
+    liste = liste[::-1]
+    for i in liste:
+        if (type(i)==list):
+            #print(i)
+            #print(flatten(i))
+            outliste.append(flatten(i))
+    #outliste.append(liste[::-1])
+    return liste
+            
+            
+flatten(liste)
+print(outliste)
