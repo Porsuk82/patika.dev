@@ -110,3 +110,12 @@ insert into employee (id, name, birthday, email) values (100, 'Hadria', '1957-09
 
 _________________________________________________________________________________________
 
+UPDATE employee name
+SET name = 'Susan'
+WHERE name = 'Suzann'
+RETURNING *;
+_________________________________________________________________________________________
+
+DELETE FROM employee
+Where name ILIKE 'A%'
+RETURNING *;
